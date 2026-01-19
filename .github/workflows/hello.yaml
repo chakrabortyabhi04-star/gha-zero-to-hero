@@ -1,0 +1,11 @@
+name: First_workflow
+on: workflow_dispatch
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print-a-greeting
+        run: echo "Hello Abhishek! My first pipeline is running."
+
+      - name: Check_the_system
+        run: echo "This runs on a Linux machine!"
